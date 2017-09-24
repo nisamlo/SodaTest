@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="reset.css">	
+	<title>test</title>
+
+<style>
+@font-face
+	{font-family:'neoncatdesign';src:url('font_HelveticaNeueLTStd-Lt.woff') format('woff');}
+
+html,body
+	{
+		font-family:neoncatdesign;
+		color:#13364f;
+	}	
+	
+.logo-top
+	{
+		position:relative;
+		width:100vw;
+		height:40vh;
+		background-color: #303030;
+	}
+	
+.logo-top .logo-top-left
+	{
+		top:0;
+		left:0;
+		height:100%;
+		position:absolute;	
+	}
+	
+.logo-top .logo-top-right
+	{
+		height:100%;
+			top:0;
+		right:0;
+		position:absolute;
+	}
+	
+.logo-top .logo-soda
+	{
+		width:10vw;height:auto;
+ 		position: absolute;
+ 		top: 35%;
+ 		left: 50%;
+ 		transform: translate(-50%, -50%);
+ 		-webkit-transform: translate(-50%, -50%);
+ 		-moz-transform: translate(-50%, -50%);
+ 		-ms-transform: translate(-50%, -50%);
+ 		-o-transform: translate(-50%, -50%);
+	}
+	
+.logo-top p
+	{
+	 	position: absolute;
+ 		bottom: 5%;
+ 		left: 50%;	
+	 	transform: translate(-50%, -50%);
+ 		-webkit-transform: translate(-50%, -50%);
+ 		-moz-transform: translate(-50%, -50%);
+ 		-ms-transform: translate(-50%, -50%);
+ 		-o-transform: translate(-50%, -50%);
+		color:#FFFFFF;
+		text-align:center;
+		font-size:4vmin;
+		padding-bottom:2vh;
+		border-bottom:2px solid #ffffff;
+	}
+	
+.logo-top .logo-media1
+	{
+		position:absolute;
+		top:1vh;
+		left:1vmin;
+		width:3vmin;height:3vmin;
+		
+	}
+
+.logo-top .logo-media2
+	{
+		position:absolute;
+		top:1vh;
+		left:5vmin;
+		width:3vmin;height:3vmin;	
+	}
+
+.logo-top .logo-media3
+	{
+		position:absolute;
+		top:1vh;
+		left:9vmin;
+		width:3vmin;height:3vmin;	
+	}	
+	
+.little-bit-about
+	{
+		position:relative;
+		width:100vw;
+		height:auto;
+	}
+	
+.little-bit-about table
+	{
+		width:70vw;
+		margin:3vh auto 0 auto;
+	}
+
+td.td-left
+	{
+		width:20vw;	
+	}
+	
+td.td-right
+	{
+		width:43vw;	
+		text-align:left;
+		vertical-align: top;
+		padding-left:2vw;
+	}
+	
+.left
+	{
+		padding:.5vw;
+		border-top:4px solid blue;
+		font-size:5vmin;
+		width:95%;		
+	}
+	
+ .right
+	{
+		padding:0vw;
+	}
+	
+	
+.about-us
+	{
+		padding:0vw;
+		margin-bottom:2vh;
+		font-size:2.5vmin;
+		line-height:4vmin;
+	}
+	
+.clients
+	{
+		position:relative;
+		width:100vw;
+		height:80vh;
+		background-image:url('soda_taxi.png');
+		background-size: cover;
+		padding-top:30vh;
+	}
+	
+.clients .container
+	{
+		position:absolute;
+		width:80vw;
+		height:auto;
+		display:block;
+		top: 30vh;
+ 		left: 50%;	
+	 	transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+ 		-moz-transform: translateX(-50%);
+ 		-ms-transform: translateX(-50%);
+ 		-o-transform: translateX(-50%);
+	}
+
+.clients .container .client-logo	
+	{
+		height: 0;
+		width:18vw;
+		padding-bottom:18vw;
+		background-color:#203140;
+		margin:0 .5vw .5vw 0;
+		display:inline-block;
+		position:relative;
+	}
+	
+.clients .container .client-logo img
+	{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width:75%;
+		height:auto;
+	}
+	
+.clients p
+	{
+	 	position: absolute;
+ 		top: 15%;
+ 		left: 50%;	
+	 	transform: translate(-50%, -50%);
+ 		-webkit-transform: translate(-50%, -50%);
+ 		-moz-transform: translate(-50%, -50%);
+ 		-ms-transform: translate(-50%, -50%);
+ 		-o-transform: translate(-50%, -50%);
+		color:#FFFFFF;
+		text-align:center;
+		font-size:5vmin;
+		padding-bottom:1vh;
+		border-bottom:2px solid #ffffff;
+	}	
+	
+.contact-us
+	{
+		position:relative;
+		width:100vw;
+		height:auto;
+		padding-top:5vh;
+		padding-bottom:5vh;
+	}
+	
+.contact-us .container
+	{
+		position:relative;
+		width:80vw;
+		height:auto;
+		vertical-align:top;
+		top:0;
+		left: 50%;	
+	 	transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+ 		-moz-transform: translateX(-50%);
+ 		-ms-transform: translateX(-50%);
+ 		-o-transform: translateX(-50%);
+	}	
+	
+.contact-us .container .our-details
+	{
+		position:relative;
+		width:45vw;
+		height:auto;
+		display:inline-block;
+		padding-right:5vw;
+	}	
+
+.contact-title
+	{
+		color:#000000;
+		font-size:6vmin;
+		border-bottom:1px solid #000000;
+		font-weight:bold;
+		margin-bottom:5vh;
+		display:inline-block;
+	}
+
+.latin
+	{
+		color:#000000;
+		font-size:1.8vmin;
+		line-height:3.2vmin;	
+	}	
+	
+.contact-us .container .customer-details
+	{
+		position:relative;
+		width:30vw;
+		vertical-align:top;
+		height:100%;
+		display:inline-block;
+		padding-top:5vh;
+		float:right;
+	}	
+
+.contact-box,.contact-message,.contact-submit
+	{
+		background:#f2f3f3;
+		border:0;
+		border-bottom:2px solid #c9d7e3;
+		width:100%;
+		height:5vh;
+		margin-bottom:2vh;
+	}
+	
+.contact-message
+	{
+		height:15vh;
+	}
+	
+.contact-submit
+	{
+		background:#286191;
+		color:#ffffff;
+		margin:0;
+		border:0;
+	}
+	
+.copyright
+	{
+		position:relative;
+		width:100vw;
+		height:4vh;
+		background:#0d171f;
+	}
+
+.copyright .copyright-date
+	{
+		position:absolute;
+		top:1vmin;
+		left:0;
+		width:auto;
+		padding-left:10vw;
+		color:#FFFFFF;
+		font-size:2vmin;
+		text-align:left;
+	}
+	
+.copyright .copyright-terms
+	{
+		position:absolute;
+		top:1vmin;
+		right:0;
+		width:auto;
+		padding-right:10vw;
+		color:#FFFFFF;
+		font-size:2vmin;
+		text-align:right;
+	}
+</style>
+</head>
+<body>
+
+	<div class="logo-top">
+		<img src="soda_logo_top_left.png" class="logo-top-left" alt=""/>
+		<img src="soda_logo_top_right.png" class="logo-top-right" alt=""/>
+		<img src="soda_logo.png" class="logo-soda"  alt=""/>
+		<img src="soda_media1.png" class="logo-media1"  alt=""/>
+		<img src="soda_media2.png" class="logo-media2"  alt=""/>	
+		<img src="soda_media3.png" class="logo-media3"  alt=""/>	
+		<p>PUSHING BOUNDARIES,<br>REALISING IDEAS.<br></p>
+	</div>
+	
+	<div class="little-bit-about">
+		<table>
+			<tbody>
+				<tr>
+					<td class="td-left">
+						<div class="left">A little bit about our company</div>
+					</td>
+					<td class="td-right">
+						<div class="right"><p class="about-us">SODA Visual is an agency with years of experience in Creative Commercial Photography. Whether you're creating a campaign from scratch or want to give your existing campaign an extra creative touch, we have the tools and the skills to make things happen.</p>
+											<p class="about-us">Paul &amp; Romain are 2 professional photographers who work alongside you and your team to help you create and launch new products and strengthen your brand.</p>
+											<p class="about-us">We help clients bring concept and ideas to life with stills and video work and lots of other cool stuff ' We try and bring a little bit of our personalities into every job we do, and we think that's what makes us a little different.</p>
+											<p class="about-us">We try not to bark orders, but know when to step in, and the open collaborative approach we bring to each job ensures we meet the clients needs.</p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="clients">
+		<p>OUR CLIENTS</p>
+		<!--	<img src="soda_taxi.png" class="taxi" alt=""/>-->
+		<div class="container">
+			<div class="client-logo">
+				<img src="soda_client_grand.png"/>
+			</div>
+			<div class="client-logo">
+				<img src="soda_client_kings.png"/>
+			</div>	
+			<div class="client-logo">
+				<img src="soda_client_peldonrose.png"/>
+			</div>
+			<div class="client-logo">
+				<img src="soda_client_studio.png"/>
+			</div>
+			<div class="client-logo">
+				<img src="soda_client_barclays.png"/>
+			</div>
+			<div class="client-logo">
+				<img src="soda_client_mos.png"/>
+			</div>	
+			<div class="client-logo">
+				<img src="soda_client_freeview.png"/>
+			</div>
+			<div class="client-logo">
+				<img src="soda_client_sony.png"/>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="contact-us">	
+		<div class="container">
+			<div class="our-details">
+				<p class="contact-title">CONTACT SODA VISUAL</p>
+				<p class="latin">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+				<p class="latin">Maecenas faucibus mollis interdum. Aenean eu leo quam.</p>
+				<p class="latin">Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				<p class="latin">Cras mattis consectetur purus sit amet fermentum.</p><br><br>
+				<p class="latin"><strong>PAUL:</strong> +44 (0)794 921 2037</p><br>
+				<p class="latin"><strong>ROMAIN:</strong> +44 (0)794 921 2037</p><br>
+				<p class="latin"><strong>EMAIL:</strong> info@soda-visual.com</p><br>
+			</div>
+			
+			<div class="customer-details">
+				<input class="contact-box" placeholder="EMAIL ADDRESS"/>
+				<input class="contact-box" placeholder="NAME"/>	
+				<textarea class="contact-message" placeholder="MESSAGE"></textarea>
+				<input type="submit" class="contact-submit" value="Submit">
+			</div>	
+		</div>
+	</div>
+	
+	
+	<div class="copyright">
+		<div class="copyright-date">Copyright Soda Visual © 2015</div>
+		<div class="copyright-terms">Terms &amp; Conditions</div>
+	</div>
+</body>
+</html>
